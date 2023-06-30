@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
+import { AuthContext } from '../Context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 function Login() {
-  
+  const redirect = useNavigate();
+  const { fetchUser } = useContext(AuthContext);
+
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+  const connexion = async (e) => {
+    e.preventDefault();
+    // try {
+    //   const loginData = {
+    //     email,
+    //     password,
+    //   };
+    //   await axios.post(`http://localhost:5000/api/user/login`, loginData);
+    //   await fetchUser();
+    //   redirect('/home');
+    // } catch (error) {
+    //   console.error(error);
+    // }
+  };
 
   return (
     <div id="page-container">
-    
-   
     <main id="main-container  justify-content-center">
      
     <div className="hero-static d-flex justify-content-center">
@@ -25,15 +45,23 @@ function Login() {
                       Connectez-vous pour accéder à votre compte et découvrir les dernières offres d'emploi correspondant à votre profil.
                     </p>
                   </div>
-                  <form className="js-validation-signin" action="be_pages_auth_all.html" method="POST">
+                  <form className="js-validation-signin" onSubmit={connexion}>
                     <div className="py-3">
                       <div className="mb-4">
                         <input type="text" className="form-control form-control-lg form-control-alt" id="login-username"
-                          name="login-username" placeholder="Adresse email"/>
+                          name="login-username" placeholder="Adresse email"
+                          onChange={(e) => {
+                            setEmail(e.target.value);
+                          }}
+                        />
                       </div>
                       <div className="mb-4">
                         <input type="password" className="form-control form-control-lg form-control-alt" id="login-password"
-                          name="login-password" placeholder="Mot de passe"/>
+                          name="login-password" placeholder="Mot de passe"
+                          onChange={(e) => {
+                            setPassword(e.target.value);
+                          }}  
+                        />
                       </div>
                       <div className="mb-4">
                         <div className="d-md-flex align-items-md-center justify-content-md-between">

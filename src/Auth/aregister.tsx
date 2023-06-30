@@ -1,15 +1,7 @@
 import React from "react"
 function aregister() {
-   
-
-
     return (
-  
         <main id="main-container">
-       
-       
-       
-  
         <div className="button-container">
           <div className="button">
             <p>Rejoignez notre communauté en tant qu'individu ou groupe pour découvrir des opportunités professionnelles,

@@ -19,8 +19,8 @@ import AdminRegister from './Admin/Components/AdminRegister';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFound404 from './Components/NotFound404';
 import Footer from './Components/Footer';
-
-
+import axios from 'axios';
+axios.defaults.withCredentials = true;
 
 
 function App() {
