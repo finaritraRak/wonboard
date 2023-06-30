@@ -4,8 +4,8 @@ import PropagateLoader from "react-spinners/PropagateLoader";
 const Spinners = () => {
    
   return (
-    <div className="sweet-loading">
-      <PropagateLoader color="#f1356d" size={15}/>
+    <div className="sweet-loading mb-4">
+      <PropagateLoader color="#0d47a1" size={15}/>
     </div>
   )
 }
