@@ -70,57 +70,7 @@ const Navbar = () => {
   
 
       
-      <div className="content">
-       
-        <div className="block block-rounded">
-          <div className="block-content block-content-full">
-            <div className="py-4 text-center">
-              <h1 className="h3 fw-bold mb-2">
-              </h1>
-              <h2 className="fs-base lh-base fw-medium text-muted mb-0">
-                
-              </h2>
-            </div>
-          </div>
-        </div>
-       
-        <div className="block block-rounded">
-          <div className="block-content block-content-full">
-            <div className="py-4 text-center">
-              <h1 className="h3 fw-bold mb-2">
-              </h1>
-              <h2 className="fs-base lh-base fw-medium text-muted mb-0">
-                
-              </h2>
-            </div>
-          </div>
-        </div>
-   
-        <div className="block block-rounded">
-          <div className="block-content block-content-full">
-            <div className="py-4 text-center">
-              <h1 className="h3 fw-bold mb-2">
-              </h1>
-              <h2 className="fs-base lh-base fw-medium text-muted mb-0">
-                
-              </h2>
-            </div>
-          </div>
-        </div>
-      
-        <div className="block block-rounded">
-          <div className="block-content block-content-full">
-            <div className="py-4 text-center">
-              <h1 className="h3 fw-bold mb-2">
-              </h1>
-              <h2 className="fs-base lh-base fw-medium text-muted mb-0">
-                
-              </h2>
-            </div>
-          </div>
-        </div>
-
-      </div>
+     
    
     </main>
     

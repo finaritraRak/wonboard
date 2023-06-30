@@ -1,6 +1,6 @@
 import icouser from './avatar10.jpg';
 import logo from './logo_large.jpg';
-
+import { NavLink } from 'react-router-dom';
 
 
 function Header() {
@@ -34,7 +34,8 @@ function Header() {
                 id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img className="rounded-circle" src={icouser} alt="Header Avatar"
           style={{ width: '21px' }} />
-                <span className="d-none d-sm-inline-block ms-2 text-success">Se connecter</span>
+                
+                <NavLink to="/login" className="d-none d-sm-inline-block ms-2 text-success">Se connecter</NavLink>
               </button>
             </div>
           </div>
